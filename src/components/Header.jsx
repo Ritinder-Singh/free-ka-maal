@@ -113,6 +113,7 @@ const Header = () => {
             </svg>
           </Link>
           <button
+            type="button"
             className="text-accent-content btn btn-ghost btn-circle text-xl"
             onClick={() => dispatch(changeMode())}
           >
@@ -246,7 +247,7 @@ const Header = () => {
                     {/* <NavLink className="text-accent-content" id="cardIcon">
                       Notifications
                     </NavLink> */}
-                    <button id="cardIcon" > Notifications </button>
+                    <button type="button" id="cardIcon" > Notifications </button>
               </li> 
               {!isLoggedIn && (
                 <>
@@ -282,7 +283,7 @@ const Header = () => {
           {/* <NavLink className="text-accent-content" id="cardIcon">
                 Notifications
           </NavLink> */}
-          <button id="cardIcon" > Notifications </button>
+          <button type="button" id="cardIcon" > Notifications </button>
           {!isLoggedIn && (
             <>
               <NavLink className="text-accent-content" to="/login">
